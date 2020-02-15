@@ -1,0 +1,701 @@
+body {
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.8;
+  font-family: "Lora", Arial, sans-serif;
+  color: gray;
+  background: #1b1b1b;
+}
+.first {
+  font: 65px "Lora", cursive;
+  font-weight: 500;
+}
+.second {
+  font: 40px "Lora", sans-serif;
+  font-weight: 500;
+}
+.phone-and-adress {
+  font: 17px "Lora", cursive;
+  font-weight: 700;
+  color: #fcb81be5;
+}
+.fab {
+  font-size: 22px;
+}
+.fa-vk,
+.fa-youtube,
+.fa-instagram,
+.fa-telegram-plane,
+.fa-yoast {
+  color: #fcb81be5;
+}
+.fa-vk,
+.fa-youtube {
+  color: transparent;
+}
+
+.fa-vk:hover,
+.fa-youtube:hover,
+.fa-instagram:hover,
+.fa-telegram-plane:hover,
+.fa-yoast:hover {
+  color: #fcb81b;
+}
+.fa-vk:hover,
+.fa-youtube:hover {
+  color: transparent;
+}
+.container-absolute {
+  position: absolute;
+  right: 0;
+  left: 0;
+  z-index: 11;
+  display: flex;
+  margin: auto;
+}
+.logo-inst {
+  width: 195px;
+  height: 65px;
+}
+.carousel-item {
+  max-height: 880px;
+}
+
+.dropdown-divider {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+#carouselExampleIndicators .carousel-caption {
+  top: 50%;
+  bottom: initial;
+  text-align: center;
+  color: #ffddaa;
+  transform: translateY(-50%);
+}
+.carousel-indicators {
+  margin-right: 40% ;
+  margin-bottom: -20px;
+  margin-left: 40%;
+  background-color: #ffffff;
+  border-radius: 5px;
+  visibility: hidden;
+}
+.carousell:hover .carousel-indicators {
+  visibility: visible;
+}
+.carousel-indicators li {
+  width: 15px;
+  height: 15px;
+  background-color: #506a85;
+  border-radius: 100%;
+}
+.carousel-indicators li.active {
+  background-color: #ffddaa;
+}
+.carousel-indicators li.focus {
+  background-color: #ffddaa;
+}
+.carousel-caption h1 {
+  font-weight: 700;
+  font-size: 3.5rem;
+  font-family: "Lora", sans-serif;
+  color: #ffddaa;
+  letter-spacing: 0.2rem;
+}
+.carousel-control-next,
+.carousel-control-prev {
+  z-index: 11;
+}
+.overlay {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  background: #000000;
+  opacity: 0.3;
+}
+.carousel-caption p {
+  font-weight: 700;
+  font-size: 1.5rem;
+  font-family: "Lora", sans-serif;
+  color: #ffffff;
+}
+.fancy-btn {
+  position: relative;
+  display: inline-block;
+  margin: 20px auto;
+  padding: 10px 20px;
+  font-style: italic;
+  font-size: 30px;
+  font-family: "Dancing Script",serif;
+  color: #ffddaa;
+  text-decoration: none;
+  border: 2px solid #ffddaa;
+  transition: color 0.4s;
+}
+.fancy-btn:after {
+  content: " ";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  border: 2px solid rgba(0,0,0,0);
+  transition: all 0.4s;
+}
+.fancy-btn:hover {
+  color: #eeeeee;
+}
+.fancy-btn:hover:after {
+  width: calc(100% - 10px);
+  height: calc(100% + 10px);
+  border: 2px solid #ffddaa;
+}
+.heading-section h2 {
+  position: relative;
+  font: 20px, "Lora", sans-serif;
+  font-weight: 400;
+  line-height: 1.4;
+  color: #ffffff;
+}
+.heading-section p.flip {
+  position: relative;
+  display: block;
+  width: 100%;
+}
+.heading-section p.flip:before {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 4px;
+  left: 100px;
+  width: 40px;
+  height: 1px;
+  margin: 0 auto;
+  background: #52361b;
+}
+.heading-section p.flip:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 4px;
+  left: -100px;
+  width: 40px;
+  height: 1px;
+  margin: 0 auto;
+  background: #52361b;
+}
+.heading-section p.flip span.deg1 {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 2px;
+  left: -30px;
+  width: 6px;
+  height: 6px;
+  margin: 0 auto;
+  background: #ce9c6b;
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+.heading-section p.flip span.deg2 {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 10px;
+  height: 10px;
+  margin: 0 auto;
+  background: #ce9c6b;
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+.heading-section p.flip span.deg3 {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 2px;
+  left: 30px;
+  width: 6px;
+  height: 6px;
+  margin: 0 auto;
+  background: #ce9c6b;
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+.staff {
+  padding: 25px;
+  -webkit-transition: all 0.3s ease;
+     -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+       -o-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+
+  bordeR: 1px solid #ce9c6b;
+}
+.staff .img {
+  width: 110px;
+  height: 110px;
+  margin: 0 auto;
+  border: 1px solid #52361b;
+  -webkit-border-radius: 50%;
+     -moz-border-radius: 50%;
+          border-radius: 50%;
+  -webkit-transition: all 0.3s ease;
+     -moz-transition: all 0.3s ease;
+      -ms-transition: all 0.3s ease;
+       -o-transition: all 0.3s ease;
+          transition: all 0.3s ease;
+
+      -ms-border-radius: 50%;
+}
+.img {
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.staff .info {
+  width: 100%;
+}
+.staff .info h3 {
+  font-size: 15px;
+  text-transform: uppercase;
+}
+.staff .info h3 a {
+  color: #ce9c6b;
+  text-decoration: none;
+}
+.staff .info span.position {
+  display: block;
+  margin-bottom: 15px;
+  font-weight: 400;
+  font-size: 12px;
+  color: #cccccc;
+}
+.ftco-mobi-section {
+  height: 100vh;
+}
+.mobi-section {
+  position: relative;
+  padding: 8em 2em 6em 2em;
+}
+.mobi-logo {
+  position: relative;
+  z-index: 5;
+  padding: 1.3em 1em;
+}
+.social-logo {
+  position: relative;
+  z-index: 5;
+  padding: 2.2em 1em 2em 1em;
+}
+.ftco-mobi-section  h1 {
+  font-weight: 700;
+  font-weight: 700;
+  font-size: 25px;
+  color: #fcb81be5;
+}
+.ftco-section {
+  position: relative;
+  padding: 7em 0;
+}
+.ftco-discount .overlay {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 0;
+  background: #000000;
+  opacity: 0.3;
+}
+.discount h3 {
+  margin-bottom: 0;
+  padding-bottom: 5px;
+  font-size: 24px;
+  color: #ffffff;
+}
+.discount h2 {
+  font-weight: 700;
+  font-weight: 700;
+  font-size: 40px;
+  color: #e49c55;
+  text-transform: uppercase;
+}
+.discount p {
+  font-size: 19px;
+  color: #ffffff;
+}
+.btn.btn-primary {
+  color: #ffffff;
+  background: #ce9c6b;
+  border: 1px solid #ce9c6b;
+}
+.pricing-entry {
+  display: block;
+  width: 100%;
+  margin-bottom: 30px;
+}
+.pricing-entry .text {
+  position: relative;
+  z-index: 0;
+  display: block;
+  width: 100%;
+}
+.pricing-entry .text h3 {
+  width: calc(100% - 80px);
+  font-size: 18px;
+}
+.pricing-entry .text h3 span {
+  padding-right: 20px;
+  color: #bfbfbf;
+  background: #1b1b1b;
+}
+.pricing-entry .text .price {
+  width: 80px;
+  font-size: 16px;
+  text-align: right;
+  color: #ce9c6b;
+  background: #1b1b1b;
+}
+.pricing-entry .text:after {
+  content: "";
+  position: absolute;
+  right: 0;
+  bottom: 35%;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 1px;
+  border-bottom: 1px dashed #785028;
+}
+.ftco-gallery {
+  padding-top: 4em;
+  background-color: black;
+}
+.no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.no-gutters > .col,
+.no-gutters > [class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+.gallery {
+  position: relative;
+  display: block;
+  height: 300px;
+}
+.gallery .icon {
+  position: relative;
+  z-index: 0;
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  opacity: 0;
+  -webkit-transition: all 0.6s ease;
+     -moz-transition: all 0.6s ease;
+      -ms-transition: all 0.6s ease;
+       -o-transition: all 0.6s ease;
+          transition: all 0.6s ease;
+}
+.icon-search:before {
+  content: "\f002";
+}
+.gallery:hover .icon:after,
+.gallery:focus .icon:after {
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+.gallery .icon:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  width: 50px;
+  height: 50px;
+  background: #ce9c6b;
+  -webkit-transition: all 0.6s ease;
+     -moz-transition: all 0.6s ease;
+      -ms-transition: all 0.6s ease;
+       -o-transition: all 0.6s ease;
+          transition: all 0.6s ease;
+}
+
+a:hover,
+a:active,
+a:focus {
+  color: #ce9c6b;
+  text-decoration: none !important;
+  outline: none !important;
+}
+.gallery:hover .icon,
+.gallery:focus .icon {
+  opacity: 1;
+}
+a {
+  color: #ce9c6b;
+  -webkit-transition: 0.3s all ease;
+       -o-transition: 0.3s all ease;
+          transition: 0.3s all ease;
+}
+.fa-search {
+  color: #ffffff;
+}
+.product-entry {
+  border: 1px solid #ce9c6b;
+}
+.img-fluid {
+  max-width: 100%;
+  height: auto;
+}
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+.product-entry .text {
+  padding: 30px;
+  border-top: 1px solid #ce9c6b;
+}
+.product-entry .text .rate span {
+  font-size: 10px;
+  color: #ce9c6b;
+}
+.product-entry .text h3 {
+  font-size: 16px;
+}
+.product-entry .text h3 span {
+  color: #ffffff;
+}
+.product-entry .text .price {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ce9c6b;
+}
+#carouselExample .carousel-caption {
+  top: 50%;
+  bottom: initial;
+  text-align: center;
+  color: rgb(255, 221, 170);
+  transform: translateY(-50%);
+}
+.fancy-btn-testimonials {
+  padding: 6px 8px ;
+  font-size: 20px;
+}
+.overlay2 {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  background: #000000;
+  opacity: 0.8;
+}
+.ftco-footer {
+  padding: 4em 0;
+  font-size: 16px;
+  background: #181818;
+}
+.ftco-footer .ftco-footer-widget h2 {
+  position: relative;
+  margin-bottom: 40px;
+  font-weight: normal;
+  font-weight: 400;
+  font-size: 16px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+.list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+.ftco-footer-social {
+  padding-bottom: 20px;
+}
+.ftco-footer-social li {
+  display: inline-block;
+  margin: 0 10px 0 0;
+  list-style: none;
+}
+.ftco-footer-social li a {
+  position: relative;
+  display: block;
+  float: left;
+  width: 50px;
+  height: 50px;
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 50%;
+}
+.ftco-footer a {
+  color: rgba(255, 255, 255, 0.7);
+}
+.ftco-footer-social li a span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 26px;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+.ftco-footer .ftco-footer-widget ul li a span {
+  color: #ffffff;
+}
+.block-23 ul li .icon {
+  width: 40px;
+  padding-top: 2px;
+  font-size: 18px;
+  color: white;
+}
+.block-23 ul li .icon,
+.block-23 ul li .text {
+  display: table-cell;
+  vertical-align: top;
+}
+.staff .text {
+  font-size: 16px;
+}
+.navbar-brand-logo {
+  margin-left: auto;
+}
+.fa-map-marker-alt,
+.fa-phone {
+  display: inline;
+  padding-right: 10px;
+}
+.ftco-mobi-section {
+  display: none;
+  background-size: cover;
+}
+.pc-carousell {
+  display: block;
+}
+.about_us {
+  padding-top: 10px;
+  font-size: 17px;
+}
+
+@media (max-width: 992px) {
+  .fa-vk,
+  .fa-youtube {
+    display: none;;
+  }
+  .carousel-caption h1 {
+    font-weight: 500;
+    font-size: 2.5rem;
+  }
+  .carousel-caption h5 {
+    padding-top: 10px;
+    font-weight: 500;
+    font-size: 0.9rem;
+  }
+  .testimonials-person {
+    font-size: 1.1rem;
+  }
+  .carousel-caption p {
+    font-size: 1.2rem;
+  }
+  .phone-and-adress {
+    display: none;
+  }
+  .navbar-brand-logo {
+    margin-left: 0;
+  }
+}
+@media (max-width: 768px) {
+  .carousel-caption h1 {
+    font-weight: 500;
+    font-size: 1.5rem;
+  }
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+  .fancy-btn-testimonials {
+    margin-top: 0;
+    font-size: 16px;
+  }
+  .carousel-caption h5 {
+    font-weight: 500;
+    font-size: 0.7rem;
+  }
+  .testimonials-person {
+    font-size: 0.8rem;
+  }
+  .discount h2 {
+    font-size: 28px;
+    color: #e49c55;
+  }
+}
+@media (max-width: 676px) {
+  .logo-inst {
+    width: 80px;
+    height: 26px;
+  }
+}  
+@media (max-width: 576px) {
+  .container-absolute .fa-vk,
+  .container-absolute .fa-youtube,
+  .container-absolute .fa-instagram,
+  .container-absolute .fa-telegram-plane,
+  .container-absolute .fa-yoast {
+    display: none;
+  }
+  .carousel-caption p {
+    display: none;
+  }
+  .carousel-caption h5 {
+    font-weight: 500;
+    font-size: 0.6rem;
+  }
+  .fancy-btn-testimonials {
+    padding: 6px 8px;
+    font-size: 14px;
+  }
+  .ftco-mobi-section {
+    display: block;
+  }
+  .pc-carousell {
+    display: none;
+  }
+}
+@media (max-width: 510px) {
+  .fancy-btn {
+    font-size: 12px;
+  }
+}
+@media (max-width: 410px) {
+  .testimonials {
+    display: none;
+  }
+}
+@media (max-width: 380px) {
+  .fancy-btn {
+    font-size: 14px;
+  }
+  .carousel-caption h1 {
+    font-weight: 500;
+    font-size: 1.3rem;
+  }
+}
