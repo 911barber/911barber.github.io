@@ -6,6 +6,9 @@ body {
   color: gray;
   background: #1b1b1b;
 }
+html {
+  scroll-behavior: smooth;
+}
 .first {
   font: 65px "Lora", cursive;
   font-weight: 500;
